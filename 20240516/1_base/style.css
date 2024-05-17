@@ -1,0 +1,214 @@
+/* body {
+    margin-top: 1000px;
+} */
+
+/* Seletor basico */
+/* 
+    Seletor de tag => tag
+    Seletor de classe =>.
+    Seletor de id => #
+    ordem: # (id) > . (class) > tag (tag) "id ganha da classe que ganha da tag"
+*/
+
+h4 {
+    font-size: 25px;
+}
+
+/* 
+    classe = seletor de varios elementos
+    id ~ seletor de UM unico elemento especifico
+*/
+
+.titulo {
+    color: purple;
+    font-size: 40px;
+}
+
+#paragrafo-especial {
+    font-style: italic;
+    color: aqua;
+}
+
+/* Propriedades de texto */
+.basic-text {
+    font-family: Arial, sans-serif;
+    color: #325745;
+}
+.style-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+.weighty-text {
+    font-weight: bold;
+    font-size: 40px;
+}
+.fancy-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #84847a;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Cores */
+/* 
+    99% = HEX
+    nome de cores = NUNCA
+    1% = RGBA -> A alpha opacidade
+*/
+
+.hex-color {
+    color: #ff6310;
+}
+.rgb-color {
+    color: rgb(21, 113, 252);
+}
+.hsl-color {
+    /* Hue, Saturation, Lightness */
+    color: hsl(120, 40%, 70%);
+}
+.rgba-color {
+    background-color: rgba(255, 70, 100, 0.1);
+}
+.rgba-color-2 {
+    background-color: rgba(255, 70, 100, 1);
+}
+.hsla-color {
+    /* Hue, Saturation, Lightness */
+    background-color: hsl(120, 50%, 30%, 0.3);
+}
+
+/* Estilizacao de links */
+.simple-link {
+    text-decoration: none;
+}
+.fancy-link {
+    text-decoration: line-through;
+    font-style: oblique;
+}
+.hover-link {
+    text-decoration: none;
+    color: #ff6310;
+}
+.hover-link:hover {
+    text-decoration: underline;
+    color: rgb(17, 85, 26);
+}
+.bold-link {
+    font-weight: 450;
+}
+.bold-link-2 {
+    font-weight: 900;
+}
+
+/* Box Model */
+.width-height {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #896689;
+    background-color: #cfc0cf;
+}
+/* Padding e o espacamento interno, que pode ser adicionado aos 4 cantos (4 bordas) */
+.padding-example {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #741;
+    /* padding: 10px 20px 30px 40px; */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+/* Margem = espacamento externo */
+.margin-exemple {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #741;
+    margin: 50px;
+}
+/* Shorthand = 1 todos, 2 valores superior e lateral */
+.complete-box {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #123;
+    padding: 50px 100px;
+    margin: 10px 20px 30px 40px;
+}
+
+/* Utilizacao:
+    SHORT-HAND = 99%
+    ORDEM: todos os lados iguais, cima e lateral, especificos
+*/
+
+/* Positions */
+.static-example {
+    position: static;
+    background: #708642;
+    border: 1px solid #ff6310;
+}
+.relative-example {
+    position: relative;
+    background-color: #84847a;
+    top: 150px;
+    left: 150px;
+    border: 1px solid #1e35b3;
+}
+.absolute-example {
+    position: absolute;
+    background: #896689;
+    top: 15px;
+    left: 250px;
+}
+.fixed-example {    
+    position: fixed;
+    background: #cfc0cf;
+    top: 50px;
+    left: 10px;
+    border: #1eb350;
+}
+.sticky-example {
+    position: sticky;
+    background: #ff6310;
+    border: #325745;
+    top: 0;
+}
+/* O inde absoluto precisa de um container relativo. Assim o inside se posiciona em relacao ao container. */
+.relative-container {
+    position: relative;
+    margin-top: 200px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+}
+.absolute-inside-relative {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #941;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    border: 2px solid #000;
+    padding: 10px;
+    /* height: 500px; */
+}
+.flex-item {
+    border: 1px solid #1e35b3;
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    height: 200px;
+}
+.flex-container {
+    justify-content: center;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+.flex-item {
+    flex: 1;
+}
+.flex-container {
+    flex-direction: column;
+}
