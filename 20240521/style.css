@@ -174,3 +174,111 @@ body {
     grid-row: 1;
     align-self: self-end;
 }
+
+/* CSS Grid Tutorial */
+
+.container1 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+    align-items: center; /* vertical alignment */
+    justify-items: center; /* horizontal alignment */
+}
+
+.container1 > div {
+    width: 200px;
+    height: 200px;
+}
+
+.aqua {
+    background-color: aqua;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+.tomato {
+    background-color: tomato;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+.sandybrown {
+    background-color: sandybrown;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+.deepskyblue {
+    background-color: deepskyblue;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "yellow green" "red blue";
+    align-items: center;
+    justify-items: center;
+}
+
+.container2 > div {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #000;
+}
+
+.red {
+    background-color: red;
+    grid-area: red;
+}
+.blue {
+    background-color: blue;
+    grid-area: blue;
+}
+.green {
+    background-color: green;
+    grid-area: green;
+}
+.yellow {
+    background-color: yellow;
+    grid-area: yellow;
+}
+
+.container3 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: 300px 300px;
+    padding: 10px;
+}
+
+.container3 > div {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.brown {
+    background-color: brown;
+}
+.lightseagreen {
+    background-color: lightseagreen;
+}
+.chartreuse {
+    background-color: chartreuse;
+}
+.goldenrod {
+    background-color: goldenrod;
+}
