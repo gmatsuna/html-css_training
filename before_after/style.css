@@ -1,0 +1,17 @@
+body, html {
+    font-size: 60px;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.container::before,
+.container::after {
+    content: "BEFORE";
+    background: red;
+    display: block;
+}
+
+.container::after {
+    content: "AFTER";
+}
